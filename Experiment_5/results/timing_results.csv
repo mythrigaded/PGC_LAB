@@ -1,0 +1,3 @@
+Source,GPU,Runs_recorded,CPU_ms,GPU_kernel_only_ms,GPU_end_to_end_ms,Kernel_only_speedup_x,End_to_end_speedup_x,Max_abs_difference,Kernel_tests,Output_validation
+Measured (this experiment),NVIDIA GeForce RTX 5060 Ti,1,1.164160,0.056790,0.264380,20.499239,4.403359,0.000000,All PASSED,MATCH
+Lab manual reference,NVIDIA RTX 4500 Ada Generation,1,0.526860,0.026517,0.066010,19.868913,7.981518,0.000000,All PASSED,MATCH

@@ -1,0 +1,40 @@
+Transcribed from screenshots/02_build_sm120_fix_and_program_output.png (19 Nov 2026)
+
+C:\Users\user\Documents\Experiment5_CUDA>nvcc -O2 neural_network.cu -o neural_network.exe
+neural_network.cu
+
+C:\Users\user\Documents\Experiment5_CUDA>neural_network.exe
+EXPERIMENT 5: NEURAL NETWORK LAYERS IN CUDA
+GPU detected: NVIDIA GeForce RTX 5060 Ti
+
+Testing individual CUDA kernels...
+CUDA error: the provided PTX was compiled with an unsupported toolchain.
+
+C:\Users\user\Documents\Experiment5_CUDA>nvcc -O2 -arch=sm_120 neural_network.cu -o neural_network.exe
+neural_network.cu
+
+C:\Users\user\Documents\Experiment5_CUDA>neural_network.exe
+EXPERIMENT 5: NEURAL NETWORK LAYERS IN CUDA
+GPU detected: NVIDIA GeForce RTX 5060 Ti
+
+Testing individual CUDA kernels...
+Matrix multiplication + bias: PASSED
+ReLU: PASSED
+Sigmoid: PASSED
+
+Forward-pass dimensions:
+Input: 256 x 128
+Hidden layer: 256 x 64
+Output: 256 x 10
+
+Average CPU compute time: 1.164160 ms
+Average GPU kernel-only time: 0.056790 ms
+Average GPU end-to-end time: 0.264380 ms
+Kernel-only speedup: 20.499239x
+End-to-end speedup: 4.403359x
+
+Maximum absolute output difference: 0.000000
+CPU and GPU outputs: MATCH (within tolerance)
+
+First 10 output values (GPU):
+0.498196 0.503101 0.508006 0.512911 0.517814 0.497729 0.502638 0.507548 0.512457 0.517364

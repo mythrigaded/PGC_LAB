@@ -1,0 +1,9 @@
+Metric,Value,Unit
+CPU average compute time,1.16416,ms
+GPU kernel-only time,0.05679,ms
+GPU end-to-end time,0.26438,ms
+"Kernel-only speedup (CPU / kernel-only, by hand)",20.4994,x
+"End-to-end speedup (CPU / end-to-end, by hand)",4.4034,x
+End-to-end minus kernel-only (copies + launch/sync overhead),0.20759,ms
+Share of end-to-end time that is not kernel work,78.5,%
+Maximum absolute CPU/GPU difference,0.0,

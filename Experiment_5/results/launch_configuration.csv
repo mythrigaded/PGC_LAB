@@ -1,0 +1,5 @@
+Step,Kernel,Grid,Block,Threads_launched,Elements_computed,Idle_threads
+1,matrixMulBiasKernel (layer 1: X x W1 + b1),4 x 16,16 x 16,16384,16384 (256 x 64),0
+2,reluKernel,64,256,16384,16384,0
+3,matrixMulBiasKernel (layer 2: A1 x W2 + b2),1 x 16,16 x 16,4096,2560 (256 x 10),1536
+4,sigmoidKernel,10,256,2560,2560,0

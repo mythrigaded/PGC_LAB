@@ -1,0 +1,12 @@
+Item,Value,Source
+GPU,NVIDIA GeForce RTX 5060 Ti,program output (screenshot 02)
+GPU architecture flag used,sm_120 (compute capability 12.0),nvcc -arch=sm_120 (screenshot 02)
+Command prompt,Visual Studio 2026 Developer Command Prompt v18.10.2 (-arch=amd64),screenshot 01
+C++ compiler (cl.exe),Microsoft C/C++ Optimizing Compiler 19.51.36260 for x64 (MSVC tools 14.51.36231),screenshot 01
+Compile flags,-O2 -arch=sm_120,screenshot 02
+Working folder,C:\Users\user\Documents\Experiment5_CUDA,screenshots 01-02
+Date,19 November 2026,screenshot file names
+NVIDIA driver / CUDA version (nvidia-smi),Not captured,-
+CUDA Toolkit version (nvcc --version),Not captured,-
+nvcc location (where.exe nvcc),Not captured,-
+CPU model,Not captured,-
